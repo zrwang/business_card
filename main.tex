@@ -1,0 +1,92 @@
+% Read me: 
+% File is modified from Andrew M. Raim's version
+% 
+% Note: 
+% - Make sure to use eps/pdf as image format 
+% - The logo include uses trim option, adjust accordingly
+% 
+% Revision Log
+%  2016-10-19   Init revision
+
+\documentclass[11pt,a4paper]{memoir}
+
+\def\Who   {Zihan Chen}
+% \def\
+\def\CityZip {Baltimore, MD 21218 USA}
+\def\Email   {zihan.chen@jhu.edu}
+\def\TEL     {+1 (443) 676-4027}
+\def\WEB     {smarts.lcsr.jhu.edu}
+
+\usepackage{graphicx}
+
+% Helvetica font looks decent on a business card
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+% Set the dimensions of the card to 3.5" x 2"
+% with appropriate margins
+\setstocksize{2in}{3.5in}
+\setpagecc{2in}{3.5in}{*}
+\settypeblocksize{1.7in}{3.3in}{*}
+\setulmargins{0.2in}{*}{*}
+\setlrmargins{0.1in}{*}{*}
+
+\setheadfoot{0.1pt}{0.1pt}
+\setheaderspaces{1pt}{*}{*}
+\checkandfixthelayout[fixed]
+
+\pagestyle{empty}
+
+\title{Business Card}
+
+\begin{document}
+% =====================
+
+\begin{Spacing}{1.00}
+\noindent
+\tiny
+\hspace{2.7mm}
+\begin{minipage}{0.42\textwidth}
+\begin{center}
+\includegraphics[trim=37 10 35 10, clip, width=1.0\linewidth]{jhu_wse_logo}
+\end{center}
+\end{minipage}
+%
+\hspace{5.0mm}
+%
+\begin{minipage}{0.55\textwidth}
+\hspace{0.1em} \\
+\textbf{\Who} \\
+Ph.D. Student \\ 
+Research Assistant \\
+\hspace{0.5em} \\
+\textbf{Laboratory for Computational \\
+Sensing and Robotics} \\
+Johns Hopkins University \\
+Hackerman Hall 136 \\
+3400 N. Charles St. \\
+\CityZip\\
+\hspace{0.2em} \\
+\textsc{Cell:} \hspace{0em} \TEL \\
+\textsc{Email:} \Email \\
+\textsc{Web:} \hspace{0.25em} \WEB \\
+\end{minipage}
+
+\vspace{1em}
+
+\end{Spacing}
+
+% =====================
+\newpage
+
+\begin{figure}
+\tiny
+\centering
+\includegraphics[width=0.45\textwidth]{vCard.eps}\\
+\vspace{-2mm}
+\textbf{vCard}
+\end{figure}
+
+
+\end{document}
