@@ -1,0 +1,8 @@
+archive
+*eps-converted-to.pdf
+*.bbl
+*.blg
+*.aux
+*.log
+*.gz
+#*
