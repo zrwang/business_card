@@ -20,9 +20,10 @@
 \usepackage{graphicx}
 
 % Helvetica font looks decent on a business card
-\usepackage[scaled]{helvet}
-\renewcommand*\familydefault{\sfdefault}
 \usepackage[T1]{fontenc}
+\usepackage[urw-garamond]{mathdesign}
+% \usepackage[scaled]{helvet}
+% \renewcommand*\familydefault{\sfdefault}
 
 % Set the dimensions of the card to 3.5" x 2"
 % with appropriate margins
@@ -43,7 +44,7 @@
 \begin{document}
 % =====================
 
-\begin{Spacing}{1.00}
+\begin{Spacing}{}
 \noindent
 \tiny
 \hspace{2.7mm}
@@ -56,22 +57,20 @@
 \hspace{5.0mm}
 %
 \begin{minipage}{0.55\textwidth}
+\vspace{0.6em}
 \hspace{0.1em} \\
 \textbf{\Who} \\
 Ph.D. Candidate \\ 
-\hspace{0.5em} \\
+\vspace{1em} \\
 \textbf{T Stone Robotics Institute} \\
 1/F, Academic Building No.1 \\
 The Chinese Univ. of Hong Kong \\
 \CityZip\\
-\hspace{0.2em} \\
+\vspace{1em} \\
 \textsc{Cell:} \hspace{0em} \TEL \\
 \textsc{Email:} \Email \\
 \textsc{Web:} \hspace{0.25em} \WEB \\
 \end{minipage}
-
-\vspace{1em}
-
 \end{Spacing}
 
 % =====================
